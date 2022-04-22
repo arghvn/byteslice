@@ -13,3 +13,27 @@ func main() {
 }
 
 //output: [72 105 32 116 104 101 114 101 33 ]
+
+//Next we want to convert the deck to byteslice ،
+ //the roadmap : First convert the deck to a string and then convert the string to a byteslice.
+
+ // deck = A slice containing a string
+
+ //This turns an array of strings into byteslice.
+
+ //reminder :
+ // save to file function: A function that stores the list of cards in a file on a local device.
+
+ //We need to create a help function to take a deck and return a string.
+ 
+ func tostring()
+
+
+ func (d deck) tostring() string {
+
+
+ }
+
+ 
+ cards.tostring()
+
