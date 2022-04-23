@@ -5,6 +5,7 @@ package main
 import (
 	"fmt"
 	"strings"
+	"io/ioutil"
 )
 
 func main() {
@@ -66,3 +67,42 @@ func main() {
 
 
 
+//Use the function writefile :
+
+func (d deck)savetofile(filename string){
+
+
+}
+
+cards.savetofile()
+
+//This function requires a receiver ,Add a deck receiver.
+
+func writefile(filename string, data[]byteslice,[perm os.filemode])error
+
+//According to the standard package description and defaults, we need the function type to be a string.
+//the word error means the value that the function returns is of the error type.
+
+
+func (d deck) savetofile (filename string)error
+
+//Inside the body we have to write a command function to save files and code on the local hard disk,
+// to do this we use the ioutil package.
+
+func ioutil.Write(filename ,[]byteslice(d.tostring()))
+
+//The first argument should be the name of the function 
+//and the second argument a byteslice of the data we want to store on the hard drive.
+//We also convert the deck to byteslice at the same time.
+
+//The third argument is for permissions.
+// Permission is for who has access to the files or who edits them, etc.
+// If we use the default permissions, it means that anyone can read and edit these files.
+
+return ioutil.writefile(filename,[]byteslice,d.tostring(),066)
+
+//066 is desired ,use for default
+
+//We must also enter the ioutil package
+//To do this, we need to import it from a subpackage called io.
+//io/ioutil
