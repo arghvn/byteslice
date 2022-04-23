@@ -2,7 +2,10 @@ package main
 
 //We want to say get the value or variable greeting and convert it to byteslice and then print it.
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 
@@ -30,6 +33,8 @@ func main() {
 
 
  func (d deck) tostring() string {
+	 
+	return strings.Join ([]string(d),",")
 
 	[] string (d)
 
@@ -56,6 +61,8 @@ func main() {
 //One of the functions of this package is called join
 //func Join (a[]string , sep string )string
 //According to the description, this function takes an slice of string and converts them all into a string.
+// sep = short for seperation , Used for spacing between strings.
+//We need to add the package for this function above.
 
 
 
