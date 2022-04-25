@@ -106,3 +106,59 @@ return ioutil.writefile(filename,[]byteslice,d.tostring(),066)
 //We must also enter the ioutil package
 //To do this, we need to import it from a subpackage called io.
 //io/ioutil
+
+
+
+
+
+
+//Now with the save to file function we can save a deck
+//We can also create the opposite function that deletes a file and converts it to a deck when needed.
+
+//save to file : save a list of cards to a filre on the local machine
+
+// in package ioutil , there is a function to read files from hard drive
+
+ func read file (filename string)([]byte,error)
+
+ //The file name must be of string type
+ //The function definition tells us that in the return section we should have a byteslice and an error type
+ //Wherever byteslice is talked about, it is related to string.
+ //After reading a file from the hard disk, we return a string of characters,
+ // which is basically a list of cards separated by commas.
+
+ //Divide that string between the cards and then turn it into a deck.
+
+ //We want to create a function that shows that a deck is made of the file.
+ //Since we do not have a deck, we do not need to define a receiver,
+ // receivers must receive a deck.
+ //So we want to call a file and convert it to a deck. 
+ //We get the file with the first argument and its type is also a string.
+
+ func newDeck Fromfile(filename string) deck {
+
+	bs, err :=ioutil.ReadFile(filename)
+
+ }
+
+ //We need to call a function to read the file, use the readfile function
+ //write this in body of function
+
+ //We send the argument in the name of the function we receive.
+ //Returns the function call both byteslice and returns an error if there is a byteslice
+ //So we get two arguments that we want to assign the values of each to two separate variables.
+
+
+ // bs short for byteslice : a byteslice that we attach to the readfile function given to a variable we have already defined.
+ // err short for error : An object of the wrong type
+
+ // error object:
+ //We used the readfile function, which returns two values for us
+ //byteslice and error
+ //If there is no problem in return section, the value of this object will be nil.
+//If there is a problem in the process of reading the file, this error will be activated
+// and there will be a real value in it.
+ 
+
+
+ 
